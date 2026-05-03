@@ -33,3 +33,22 @@ Le système repose sur deux programmes distincts qui communiquent via des fichie
    ```bash
    git clone <ton-lien-github>
    cd <nom-du-dossier>
+2. Compilez les binaires à l'aide du Makefile :
+   ```bash
+   make
+3. Lancez le guichet pour enregistrer des opérations :
+   ```bash
+   ./bank
+4. Exécutez le traitement de nuit pour mettre à jour la base de données :
+   ```bash
+   ./batch
+5. (Optionnel) Nettoyez l'environnement (supprime les binaires et le journal de transactions, mais garde la base maître intacte) :
+   ```bash
+   make fclean
+
+## 🛠️ Concepts techniques abordés
+- Syntaxe formatée stricte (Zone A / Zone B).
+- Manipulation de fichiers plats en ligne séquentielle (LINE SEQUENTIAL).
+- Définition typée des données (PICTURE / PIC).
+- Structures de contrôle conditionnelles et boucles (EVALUATE, PERFORM VARYING).
+- Tableaux en mémoire (OCCURS).
